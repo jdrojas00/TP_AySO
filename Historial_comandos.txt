@@ -1,0 +1,131 @@
+pwd
+echo $HOME
+ls
+ssh-keygen -t ed25519
+ls -la
+cd .ssh
+ls
+cat id_ed25519
+ls
+cd .ssh
+l
+cat id_ed25519.pub
+cat id_ed25519
+ssh -h
+ssh --help
+ssh help
+ssh -u vahrant@127.0.0.1 -p 22 -i id_ed25519
+ssh -H vahrant@127.0.0.1 -p 22 -i id_ed25519
+ssh -h vahrant@127.0.0.1 -p 22 -i id_ed25519
+ssh vahrant@127.0.0.1 -p 22 -i id_ed25519
+ls
+ssh vahrant@127.0.0.1 -p 22 -i id_ed25519.pub
+cat known_hosts 
+ls
+cat authorized_keys 
+cat id_ed25519.pub
+cd
+ls
+cd repogit/
+ls
+ls -la
+touch abc.txt
+git clone git@github.com:jdrojas00/repo_rojas.git
+ls -la
+cd repo_rojas/
+ls
+clear
+echo "hola" > hola.txt
+ls
+git status
+git commit -m "agrego hola"
+git add .
+git commit -m "agrego hola"
+git push
+cat ../../.ssh/id_ed25519.pub
+git push
+git push -u origin main
+cat /etc/shadow
+ls -l /etc/shadow
+sudo cat /etc/shadow
+cat /etc/passwd | grep -n bash
+cat /etc/passwd | grep bash
+cat /etc/passwd | grep -v nologin > archivo1.txt
+lscpu | grep -i model
+lscpu
+lscpu | grep -i model | head -n1 > info_cpu.txt
+cat info_cpu.txt 
+ls
+
+ls
+cd
+ls
+cd repogit/
+ls
+cd repo_rojas/
+ls
+cd ..
+ls
+git clone https://github.com/jdrojas00/TP_AySO.git
+cd TP_AySO/
+ls
+cat /etc/os-release
+echo “Usuario=$(whoami)” > datos_usuario.txt
+cat datos_usuario.txt 
+git add ,
+git add .
+git config
+git config --get-all
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+cat /proc/cpuinfo
+grep "model name" /proc/cpuinfo
+grep "model name" /proc/cpuinfo | sort -u
+grep "model name" /proc/cpuinfo | sort -u >> datos_usuario.txt
+cat datos_usuario.txt 
+git add .
+git commit -m "feat: Añadiendo información de CPU"
+clear
+cat /etc/passwd
+cat /etc/passwd | grep -v "nologin"
+cat /etc/passwd | grep "nologin"
+cat /etc/passwd | grep -v "nologin"
+ls
+grep -v nologin /etc/passwd > lista_ordenada
+ls
+cat lista_ordenada 
+sort lista_ordenada -t ":" -k7
+cd repogit/
+ls
+cd TP_AySO/
+ls
+rm lista_ordenada 
+grep -v nologin /etc/passwd | sort -t ":" -k7 > lista_ordenada
+cat lista_ordenada 
+git commit -m "ADD: Listado de usuarios ordenada"
+git add .
+git commit -m "ADD: Listado de usuarios ordenada"
+cd repogit/
+ls
+cd TP_AySO/
+ls
+cat *
+which apropos
+man apropos
+tcpdump > comando_dump_net
+sudo tcpdump > comando_dump_net
+ls
+cat comando_dump_net 
+rm comando_dump_net 
+apropos "dump traffic" > comando_dump_net
+echo apropos "dump traffic" >> comando_dump_net
+cat comando_dump_net 
+git add .
+git commit -m "ADD: Comando para Capturar y analizar el trafico de red"
+ls
+nano README.md 
+cat << FIN >> README.md 
+git add .
+git commit -m "ADD: Datos Personales"
+ls -la $HOME
+history -a $HOME/.bash_history
